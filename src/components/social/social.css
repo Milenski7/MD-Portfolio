@@ -1,0 +1,75 @@
+.social-container {
+    width: 5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 18%;
+    left: 0;
+    z-index: 800;
+    transition: transform 0.2s ease-out;
+    animation: animateIn 1s ease-in-out;
+}
+
+.facebook {
+    font-size: 2.5rem;
+    background-color: rgba(42, 42, 189, 0.726);
+    color: white;
+    padding: 0.2rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0 10px 0 0;
+}
+
+.instagram {
+    font-size: 2.85rem;
+    background-color: rgba(255, 68, 0, 0.877);
+    color: white;
+    padding: 0.2rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.linkedin {
+    font-size: 2.85rem;
+    background-color: rgb(255, 255, 255);
+    color: turquoise;
+    padding: 0.2rem;
+    height: 2.3rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0 0 10px 0;
+}
+
+.social-arrow {
+    display: flex;
+    height: 2.5rem;
+}
+
+.arrow {
+    height: 100%;
+    font-size: 2rem;
+    padding: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.279);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+    .arrow:hover {
+        background-color: black;
+        color: turquoise;
+    }
+@keyframes animateIn {
+    from {transform: translateX(-50%)}
+    to {transform: translateX(0)}
+}
+

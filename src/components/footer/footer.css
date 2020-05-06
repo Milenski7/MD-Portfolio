@@ -1,0 +1,18 @@
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto 0 0 0;
+    position: absolute;
+    clear: both;
+    bottom: 0;
+    background-color: rgba(211, 211, 211, 0.147);
+    border-top: 5px solid black;
+}
+
+.footer {
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Muli", sans-serif;
+    font-size: 0.9rem;
+}

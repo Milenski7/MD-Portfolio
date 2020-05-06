@@ -1,0 +1,241 @@
+.cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("galaxy.jpg");
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    background-position: bottom right;
+    border-top: 2px solid black;
+}
+
+
+.projects-header {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.cards {
+    width: 90%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+    min-height: max-content;
+}
+
+.flip-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0 0 0;
+}
+
+.projects-header {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 100%;
+    perspective: 1000px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  .card-h1 {
+    font-size: 1.2rem;
+    height: 20%;
+    color: white;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+  }
+    .card-h1:hover {
+      color: yellowgreen;
+      text-shadow: 4px 4px 4px black;
+    }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 1px 1px 20px white;
+    border: 1px solid yellow;
+  }
+  .flip-card-inner::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background-color: #fff;
+    transform: skew(2deg, 2deg);
+    border-radius: 20px;
+  }
+
+  .flip-card-inner::before {
+    background: linear-gradient(235deg, rgb(253, 253, 70), lime);
+  } 
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-back {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  .card-li {
+      width: 70%;
+      text-align: left;
+      padding: 0.1rem 0 0.1rem 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.7rem;
+  }
+
+.card-icon {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(255, 189, 47);
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+.card-icon2 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: turquoise;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hand {
+  font-size: 1.5rem;
+    margin: 0 1rem 0 0;
+    color: rgb(237, 255, 72);
+}
+
+@media only screen and (max-width: 1230px){
+  .card-li {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 966px){
+  .flip-card {
+    width: 45%;
+  }
+  .card-header {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.1rem;
+  }
+  .hand {
+    margin: 0 0.2rem 0 0;
+  }
+}
+@media only screen and (max-width: 883px){
+  .flip-cards {
+    flex-direction: column;
+    min-height: max-content;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .flip-card {
+    height: 20rem;
+    width: 60%;
+    margin: 1rem 0 3rem 0;
+    min-height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 675px){
+  .flip-card {
+    height: 20rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  .flip-card {
+    height: 10rem;
+    width: 90%;
+  }
+  .card-li {
+    width: 90%;
+  }
+  .card-icon, .card-icon2 {
+    font-size: 0.8rem;
+    margin-right: 2rem;
+  }
+  .projects-header {
+    font-size: 1.4rem;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 344px){
+  .card-icon, .card-icon2 {
+    margin-right: 1rem;
+  }
+  .card-h1 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
