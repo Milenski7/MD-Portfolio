@@ -9,10 +9,10 @@ const Jumbotron = () => {
                 <div className="hi">
                     <h1 className="nav-logo2">MD</h1>
                     <h1 className="hi1">
-                        Hello! I am Milen Donchev, a Full Stack Web Developer based in Varna, Bulgaria.
+                        Hi! I am Milen Donchev, a Full Stack Web Developer based in Varna, Bulgaria.
                 </h1>
                     <p className="hi2">
-                        Looking for a Javascript developer? You think it, I make it - Simple.
+                        Looking for a Javascript developer? Look no further! You think it - I make it.
                 </p>
                     <Link smooth={true} to="about" className="btn-a">
                         <span className="btn-span"></span>
