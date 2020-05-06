@@ -89,24 +89,8 @@
     transform-style: preserve-3d;
     border-radius: 12px;
     box-shadow: 1px 1px 20px white;
-    border: 1px solid yellow;
+    border: 2px solid yellow;
   }
-  .flip-card-inner::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: -1;
-    background-color: #fff;
-    transform: skew(2deg, 2deg);
-    border-radius: 20px;
-  }
-
-  .flip-card-inner::before {
-    background: linear-gradient(235deg, rgb(253, 253, 70), lime);
-  } 
 
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
