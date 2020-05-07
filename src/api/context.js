@@ -15,7 +15,6 @@ export const Provider = ({ children }) => {
             const isTop = window.scrollY;
             if (isTop >= 690) { setNavColor("rgb(34, 34, 34)") }
             else { setNavColor("rgba(0, 0, 0, 0.200)") }
-            console.log(isTop);
         });
     });
 

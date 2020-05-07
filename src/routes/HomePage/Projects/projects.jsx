@@ -11,7 +11,8 @@ const Projects = () => {
             <ScrollAnimation offset={80} animateIn="zoomIn" className="cards">
                 <div className="flip-cards">
                     <div className="flip-card">
-                        <a target="_blank" href="https://md-photography.herokuapp.com/" className="card-h1">Milen Donchev Photography</a>
+                        <a target="_blank" href="https://md-photography.herokuapp.com/" className="card-h1">
+                            <FontAwesomeIcon icon={faHandPointRight} className="hand" />Milen Donchev Photography</a>
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
                                 <img src={require('./card1.jpg')} alt="coffee-and-code-blog" className="card-img" />
@@ -39,7 +40,8 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="flip-card">
-                        <a target="_blank" href="https://coffee-and-code-m.herokuapp.com/" className="card-h1">Coffee and Code Blog</a>
+                        <a target="_blank" href="https://coffee-and-code-m.herokuapp.com/" className="card-h1">
+                            <FontAwesomeIcon icon={faHandPointRight} className="hand" />Coffee and Code Blog</a>
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
                                 <img src={require('./card2.jpg')} alt="coffee-and-code-blog" className="card-img" />
